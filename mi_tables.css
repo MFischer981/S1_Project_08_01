@@ -6,8 +6,8 @@
    Case Problem 1
 
    Tables Style Sheet
-   Author: 
-   Date:   
+   Author: Micah Fischer
+   Date:   12-11-18
 
    Filename:         mi_tables.css
 
@@ -15,21 +15,60 @@
 
 /* Table Styles */
 
+/* Created a table with a solid border of 5px. Set table background to gradient from blue to black. */
+table {
+    background: linear-gradient(rgb(190, 215, 255), black);
+    border: 5px solid grey;
+}
 
+/* Created header cells and data cells with a solid border of 3px. Set line height to 1.4em and padding to 8px/ */
+th,
+td {
+    border: 3px solid grey;
+    line-height: 1.4em;
+    padding: 8px;
+}
+
+/* Set header cell background to black and text color to blue. Defined font weight as normal. */
+th {
+    background: black;
+    color: rgb(130, 210, 255);
+    font-weight: normal;
+}
+
+/* Set table data cell text to black and font size to .9em. Set text align to top. */
+td {
+    color: white;
+    font-size: .9em;
+    text-align: top;
+}
 
 /* Column Styles */
 
+/* Set colgroup with id of #firstCol to a width of 24%. */
+#firstCol {
+    width: 24%;
+}
 
+/* Set colgroup with class of .dataCols to a width of 16%. */
+.dataCols {
+    width: 16%;
+}
 
 /* Table Header Styles */
 
+/* Set thead table rows to height of 60px. */
+thead tr {
+    height: 60px;
+}
 
+/* Set the first th in the first table row in the thead to a font size of 2em. */
+thead tr:first-of-type th:first-of-type {
+    font-size: 2em;
+}
 
-
-
-
-
-
-
-
-
+/* Set all table cells that are not the first of kind in the first table row in the thead to a background of black. Set color to black. */
+thead tr:first-of-type th:not(:first-of-type) {
+    background: transparent;
+    color: black;
+}
